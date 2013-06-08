@@ -11,7 +11,7 @@ import javax.swing.JFrame;
 public class GameApp {
 
 	public static void main(String[] args) {
-		CandyGame game = new CandyGame(Level3.class);
+		CandyGame game = new CandyGame(Level2.class);
 		CandyFrame frame = new CandyFrame(game);
 		frame.setDefaultCloseOperation(JFrame.EXIT_ON_CLOSE);
 		frame.setVisible(true);

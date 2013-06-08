@@ -1,0 +1,32 @@
+<project name="CandyType" default="dist" basedir=".">
+
+        <!-- Compila el proyecto, deja los archivos class en el directorio bin -->
+        <target name="compile">
+                <mkdir dir="bin"/>
+                <javac srcdir="src" destdir="bin"/>
+        </target>
+
+        <!-- Crea la documentacion en formato Javadoc, en el directorio doc. -->
+        <target name="doc" depends="compile">
+                <javadoc sourcepath="src" destdir="doc"/>
+        </target>
+        
+        <!-- No hay tests en esta cursada -->
+
+        <!-- Crea el jar ejecutable con todo el proyecto compilado. -->
+        <target name="dist" depends="compile, doc">
+                <copy todir="bin/resources">
+                        <fileset dir="resources"/>
+                </copy>
+                <jar destfile="CandyType.jar" basedir="bin">
+                        <manifest>
+                                <attribute name="Main-Class" value="frontend.GameApp"/>
+                        </manifest>
+                </jar>
+        </target>
+
+        <!-- Borra todos los archivos generados luego de compilar. -->
+        <target name="clean" depends="dist">
+                <delete dir="bin"/>
+        </target>
+</project>

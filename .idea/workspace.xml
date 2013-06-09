@@ -3,8 +3,6 @@
   <component name="ChangeListManager">
     <list default="true" id="56c5e8f3-1c81-4cc3-85c3-0053adaf1808" name="Default" comment="">
       <change type="MODIFICATION" beforePath="$PROJECT_DIR$/src/backend/cell/CheckCell.java" afterPath="$PROJECT_DIR$/src/backend/cell/CheckCell.java" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/src/backend/Grid.java" afterPath="$PROJECT_DIR$/src/backend/Grid.java" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/src/backend/level/Level3.java" afterPath="$PROJECT_DIR$/src/backend/level/Level3.java" />
     </list>
     <ignored path="candytype.iws" />
     <ignored path=".idea/workspace.xml" />
@@ -106,10 +104,28 @@
           </provider>
         </entry>
       </file>
-      <file leaf-file-name="CheckCell.java" pinned="false" current="true" current-in-tab="true">
+      <file leaf-file-name="CheckCell.java" pinned="false" current="false" current-in-tab="false">
         <entry file="file://$PROJECT_DIR$/src/backend/cell/CheckCell.java">
           <provider selected="true" editor-type-id="text-editor">
-            <state line="28" column="44" selection-start="746" selection-end="746" vertical-scroll-proportion="0.74336284">
+            <state line="19" column="16" selection-start="459" selection-end="459" vertical-scroll-proportion="0.0">
+              <folding />
+            </state>
+          </provider>
+        </entry>
+      </file>
+      <file leaf-file-name="BlankElement.java" pinned="false" current="false" current-in-tab="false">
+        <entry file="file://$PROJECT_DIR$/src/backend/element/BlankElement.java">
+          <provider selected="true" editor-type-id="text-editor">
+            <state line="2" column="13" selection-start="39" selection-end="39" vertical-scroll-proportion="0.0">
+              <folding />
+            </state>
+          </provider>
+        </entry>
+      </file>
+      <file leaf-file-name="Bomb.java" pinned="false" current="false" current-in-tab="false">
+        <entry file="file://$PROJECT_DIR$/src/backend/element/Bomb.java">
+          <provider selected="true" editor-type-id="text-editor">
+            <state line="2" column="13" selection-start="39" selection-end="39" vertical-scroll-proportion="0.0">
               <folding />
             </state>
           </provider>
@@ -142,15 +158,6 @@
           </provider>
         </entry>
       </file>
-      <file leaf-file-name="Move.java" pinned="false" current="false" current-in-tab="false">
-        <entry file="file://$PROJECT_DIR$/src/backend/move/Move.java">
-          <provider selected="true" editor-type-id="text-editor">
-            <state line="5" column="22" selection-start="99" selection-end="99" vertical-scroll-proportion="0.0">
-              <folding />
-            </state>
-          </provider>
-        </entry>
-      </file>
       <file leaf-file-name="CandyFrame.java" pinned="false" current="false" current-in-tab="false">
         <entry file="file://$PROJECT_DIR$/src/frontend/CandyFrame.java">
           <provider selected="true" editor-type-id="text-editor">
@@ -160,10 +167,10 @@
           </provider>
         </entry>
       </file>
-      <file leaf-file-name="CandyGame.java" pinned="false" current="false" current-in-tab="false">
+      <file leaf-file-name="CandyGame.java" pinned="false" current="true" current-in-tab="true">
         <entry file="file://$PROJECT_DIR$/src/backend/CandyGame.java">
           <provider selected="true" editor-type-id="text-editor">
-            <state line="33" column="25" selection-start="722" selection-end="722" vertical-scroll-proportion="0.0">
+            <state line="33" column="25" selection-start="722" selection-end="722" vertical-scroll-proportion="0.3557522">
               <folding />
             </state>
           </provider>
@@ -652,13 +659,6 @@
     <option name="FILTER_TARGETS" value="false" />
   </component>
   <component name="editorHistoryManager">
-    <entry file="file://$PROJECT_DIR$/src/frontend/BoardPanel.java">
-      <provider selected="true" editor-type-id="text-editor">
-        <state line="9" column="13" selection-start="170" selection-end="170" vertical-scroll-proportion="0.0">
-          <folding />
-        </state>
-      </provider>
-    </entry>
     <entry file="file://$PROJECT_DIR$/src/backend/level/Level2.java">
       <provider selected="true" editor-type-id="text-editor">
         <state line="31" column="30" selection-start="865" selection-end="865" vertical-scroll-proportion="0.0">
@@ -708,13 +708,6 @@
         </state>
       </provider>
     </entry>
-    <entry file="file://$PROJECT_DIR$/src/backend/CandyGame.java">
-      <provider selected="true" editor-type-id="text-editor">
-        <state line="33" column="25" selection-start="722" selection-end="722" vertical-scroll-proportion="0.0">
-          <folding />
-        </state>
-      </provider>
-    </entry>
     <entry file="file://$PROJECT_DIR$/src/backend/cell/Cell.java">
       <provider selected="true" editor-type-id="text-editor">
         <state line="93" column="48" selection-start="2104" selection-end="2104" vertical-scroll-proportion="0.0">
@@ -752,7 +745,28 @@
     </entry>
     <entry file="file://$PROJECT_DIR$/src/backend/cell/CheckCell.java">
       <provider selected="true" editor-type-id="text-editor">
-        <state line="28" column="44" selection-start="746" selection-end="746" vertical-scroll-proportion="0.74336284">
+        <state line="19" column="16" selection-start="459" selection-end="459" vertical-scroll-proportion="0.0">
+          <folding />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/src/backend/element/BlankElement.java">
+      <provider selected="true" editor-type-id="text-editor">
+        <state line="2" column="13" selection-start="39" selection-end="39" vertical-scroll-proportion="0.0">
+          <folding />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/src/backend/element/Bomb.java">
+      <provider selected="true" editor-type-id="text-editor">
+        <state line="2" column="13" selection-start="39" selection-end="39" vertical-scroll-proportion="0.0">
+          <folding />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/src/backend/CandyGame.java">
+      <provider selected="true" editor-type-id="text-editor">
+        <state line="33" column="25" selection-start="722" selection-end="722" vertical-scroll-proportion="0.3557522">
           <folding />
         </state>
       </provider>

@@ -64,7 +64,7 @@ public class MoveMaker {
 	
 	public Move getMove(int i1, int j1, int i2, int j2) {
 		Move move = map.get(grid.get(i1, j1).getKey() + grid.get(i2, j2).getKey());
-		if(move == null){
+		if(move == null){ // Ignore elements that shouldn't be moving (e.g. BlankElement)
 			return null;
 		}
 		move.setCoords(i1, j1, i2, j2);

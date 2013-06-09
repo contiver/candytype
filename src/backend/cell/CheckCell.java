@@ -25,7 +25,7 @@ public class CheckCell extends Cell {
 
     public boolean fallUpperContent(){
         Cell upperCell = this.getAround()[Direction.UP.ordinal()];
-        if (upperCell.getContent().isCheckable()){
+        if (upperCell.getContent().isCheckable() && !(this.getContent().isSolid())){   // TODO condicion isSolid agregada para solucionar problema
             foodMap.get(((Food)(upperCell.getContent())).getFoodType()).reachedCheckCell();
             upperCell.getAndClearContent();
         }

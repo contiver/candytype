@@ -17,7 +17,7 @@ public class FoodGenerator  extends CandyGeneratorCell{
 	}
 
 	public Element getContent(){
-		if((int)(Math.random()*100) % 12 == 0){
+		if((int)(Math.random()*100) % 22 == 0){
 			int j = (int)(Math.random() * FoodType.values().length);
 			FoodTypeState quantity = foodMap.get(FoodType.values()[j]);
 			if(quantity.remainingFood()>0){

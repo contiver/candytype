@@ -76,13 +76,19 @@ public abstract class Grid {
 		while (row >= 0) {
 			int col = 0;
 			while (col < SIZE) {
-				if (g[row][col].isEmpty()) {
+			    if(g[row][col].fallUpperContent()){
+                    row = SIZE;
+                    col = -1;
+                    break;
+                }  // TODO parte de abajo era como estaba originalmente, cambiado para tratar de solucionar bug con Food, de por si fall
+                   // fallUpperContent() ya contiene un isEmpty() dentro suyo...
+			/*	if (g[row][col].isEmpty() || ) {
 					if (g[row][col].fallUpperContent()) {
 						row = SIZE;
 						col = -1;
 						break;
-					} 
-				}
+					}
+				}*/
 				col++;
 			}	
 			row--;

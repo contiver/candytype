@@ -44,7 +44,7 @@ public class Level2 extends Grid {
 	            for (int col = 5; col < 8; col++) {
                     auxCell = new JellyCell(this,jellies);
                     jellies.add(auxCell);
-	                g()[row][col] = new JellyCell(this,jellies);
+	                g()[row][col] = auxCell;
 	                getMap().put(g()[row][col], new Point(row,col));
 	            }
 	        }

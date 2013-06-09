@@ -53,7 +53,7 @@ public class CandyFrame extends JFrame {
 							bp.clearImage(i, j);
 							Image image = images.getImage(element);
 							bp.setImage(i, j, image);
-                            if(cell instanceof JellyCell){ // TODO preguntar si esta bien cablear la pregunta sobre la clase (imperativo?)
+                            if(cell instanceof JellyCell){
                                 image = images.getImage(cell);
                                 bp.appendImage(i, j, image);
                             }

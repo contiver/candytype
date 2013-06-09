@@ -17,7 +17,7 @@ public class Level3 extends Grid {
     private static int REQUIRED_SCORE = 0;
     private static int MAX_MOVES = 20;
     private static int REQUIRED_CHERRIES = 1;
-    private static int REQUIRED_HAZELNUT = 1;
+    private static int REQUIRED_HAZELNUT = 0;
     private Map<FoodType, FoodTypeState> foodMap = new HashMap<FoodType, FoodTypeState>();
 
     private Cell wallCell;

@@ -4,6 +4,7 @@ import backend.FoodTypeState;
 import backend.Grid;
 import backend.element.Food;
 import backend.element.FoodType;
+import backend.element.Nothing;
 import backend.move.Direction;
 
 import java.util.Map;
@@ -25,9 +26,9 @@ public class CheckCell extends Cell {
 
     public boolean fallUpperContent(){
         Cell upperCell = this.getAround()[Direction.UP.ordinal()];
-        if (upperCell.getContent().isCheckable() && !(this.getContent().isSolid())){   // TODO condicion isSolid agregada para solucionar problema
-            foodMap.get(((Food)(upperCell.getContent())).getFoodType()).reachedCheckCell();
-            upperCell.getAndClearContent();
+        if (this.getContent().isCheckable()){
+            foodMap.get(((Food)(this.getContent())).getFoodType()).reachedCheckCell();
+            this.setContent(new Nothing());
         }
         return super.fallUpperContent();
     }
